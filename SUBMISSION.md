@@ -4,8 +4,8 @@
 
 ### 1. Implementation Status
 - [ ] Stage 1: Mock API (OAuth2, pagination, `updated_since`, 429/5xx, messy data, `/admin/*` endpoints)
-- [ ] Stage 2: Database design (medallion bronze → silver → gold, source history kept, writeback separated; re-runnable DDL)
-- [ ] Stage 3: Ingestion (token refresh, retries, incremental watermark, bronze → silver, idempotent upsert, rejected records, run log)
+- [ ] Stage 2: Ingestion (token refresh, retries, incremental watermark, bronze → silver, idempotent upsert, rejected records, run log)
+- [ ] Stage 3: Database design (medallion bronze → silver → gold, source history kept, writeback separated; re-runnable DDL)
 - [ ] Stage 4: Writeback app (filter, edit with user and reason, validation, audit trail, revert)
 - [ ] Stage 5: dbt reconciliation in the gold layer (`recon_field_diff`, `recon_summary`, `recon_recommendations`) + report
 - [ ] `run.bat` with every command from the README

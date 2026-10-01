@@ -1,4 +1,4 @@
-# ingestion/: Stage 3 Python Ingestion
+# ingestion/: Stage 2 Python Ingestion
 
 Python client and loader that pull from the mock API into the database. Runs in a container started by `run.bat pipeline`.
 
@@ -10,4 +10,4 @@ Python client and loader that pull from the mock API into the database. Runs in 
 - Idempotent upserts, plus the ingestion run log
 - `Dockerfile` and pinned dependencies
 
-If you build silver with dbt instead, the ingestion stops at bronze. Explain your choice in `docs/decisions.md`. See **Stage 3** in the root `README.md`.
+If you build silver with dbt instead, the ingestion stops at bronze. Explain your choice in `docs/decisions.md`. See **Stage 2** in the root `README.md`.

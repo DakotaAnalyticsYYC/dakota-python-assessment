@@ -3,7 +3,7 @@
 > For each decision: **Decision**, **Alternatives considered**, **Rationale**, **Trade-offs**.
 
 ## Database Design
-_Answer the six design questions from Stage 2:_
+_Answer these questions:_
 1. _What goes in each layer, and why there?_
 2. _Natural or surrogate keys?_
 3. _How is a restatement represented, and how do you find the source value at the time of an edit?_

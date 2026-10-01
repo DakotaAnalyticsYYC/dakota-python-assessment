@@ -23,17 +23,7 @@ Create a FastAPI service that generates seeded, synthetic oil & gas data: at lea
 
 See [api/README.md](api/README.md)
 
-### 2. Database Design (20 points)
-Design a PostgreSQL database using a **medallion architecture** (bronze → silver → gold). The design is yours, but it must:
-- Keep the data as received from the API
-- Store user edits separately from source data, with an audit trail
-- Keep the history of source values, so you can tell what the source said when an edit was made
-- Hold pipeline metadata (run log, watermarks, rejected records)
-
-Include initialization scripts, an ER diagram and a data dictionary.
-See [database/README.md](database/README.md)
-
-### 3. Data Ingestion (20 points)
+### 2. Data Ingestion (20 points)
 Build a Python client that loads the API data into your database.
 - Token refresh when it expires mid-run
 - Retries with backoff for 429/5xx
@@ -42,6 +32,16 @@ Build a Python client that loads the API data into your database.
 - Logging
 
 See [ingestion/README.md](ingestion/README.md)
+
+### 3. Database Design (20 points)
+Design a PostgreSQL database using a **medallion architecture** (bronze → silver → gold). The design is yours, but it must:
+- Keep the data as received from the API
+- Store user edits separately from source data, with an audit trail
+- Keep the history of source values, so you can tell what the source said when an edit was made
+- Hold pipeline metadata (run log, watermarks, rejected records)
+
+Include initialization scripts, an ER diagram and a data dictionary.
+See [database/README.md](database/README.md)
 
 ### 4. Writeback App (20 points)
 Build a web app (framework of your choice) where a user can browse, filter and edit production values and well status.
