@@ -13,4 +13,4 @@ dbt/
     └── marts/            # recon_field_diff, recon_summary, recon_recommendations (+ tests)
 ```
 
-dbt runs inside a container (`run.bat pipeline` / `run.bat reconcile`). See **Stage 5** in the root `README.md`.
+dbt runs inside a container (`run.bat` / `run.bat pipeline`). See **Stage 5** in the root `README.md`.

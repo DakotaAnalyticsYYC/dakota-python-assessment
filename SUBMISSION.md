@@ -9,7 +9,7 @@
 - [ ] Stage 4: Writeback app (filter, edit with user and reason, validation, audit trail, revert)
 - [ ] Stage 5: dbt reconciliation in the gold layer (`recon_field_diff`, `recon_summary`, `recon_recommendations`) + report
 - [ ] `run.bat` with every command from the README
-- [ ] Docs completed in `docs/`, plus the **Your Notes** section of `README.md`
+- [ ] Docs completed in `docs/`, and `README.md` updated with setup instructions
 - [ ] Tests written (pytest + dbt tests)
 
 ### 2. Test on Windows in a Clean Environment
@@ -30,7 +30,6 @@ Then simulate upstream restatements and rerun:
 ```bat
 curl.exe -X POST http://localhost:8000/admin/advance-day
 run.bat pipeline
-run.bat reconcile
 run.bat test
 ```
 
@@ -42,7 +41,7 @@ run.bat test
 ### 3. Verify Deliverables
 
 Check that your repository includes:
-- [ ] `run.bat` with: *(no args)*, `start`, `pipeline`, `app`, `reconcile`, `test`, `status`, `stop`, `clean`
+- [ ] `run.bat` with: *(no args)*, `pipeline`, `test`, `stop`, `clean`
 - [ ] `docker-compose.yml` with every service (postgres, api, app, plus anything else you need)
 - [ ] `.env.example` with every required variable
 - [ ] `api/`, `ingestion/`, `database/`, `app/`, `dbt/`, `reports/`, `tests/` populated
